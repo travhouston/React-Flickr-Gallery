@@ -5,12 +5,7 @@ import React, { Component } from 'react';
 // Navigation 
 
 class Navigation extends Component {
-
-    navigateToRoute = (query) => {
-        window.location.assign(`/${query}`);
-    }
-
-
+    
     render () {
         return (
             <div>

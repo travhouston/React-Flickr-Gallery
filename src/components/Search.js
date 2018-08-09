@@ -12,16 +12,24 @@ class Search extends Component {
 		};
 	}
 
-	passInput = { input: '' };
-
-	onSearchChange = (event) => {
-		this.passInput.input = event.target.value;
+	passInput = { 
+		input: ''
 	};
 
-	handleSubmit = (event) => {
-		event.preventDefault();
-		event.currentTarget.reset();
+	onSearchChange = (e) => {
+		
+		this.passInput.input = e.target.value;
+	};
+
+	handleSubmit = (e) => {
+		e.preventDefault();
+
 		this.setState({ query: this.passInput.input });
+
+		e.currentTarget.reset();
+
+
+
 	};
 
 	render() {
