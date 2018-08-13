@@ -21,11 +21,11 @@ class App extends Component {
       <BrowserRouter>
         <div className="container">
           <Switch>
-            <Route exact path="/" render={ () => (<Search api={ apiKey } />) } />
-            <Route exact path="/:id" render={ (props) => (<Container api={ apiKey } query={ props.match.params.id } />) }></Route>
+            <Route exact path="/" render={ () => (<Search api={ apiKey } query={'waterfalls'} />) } />
             <Route path="/planes" render={ () => (<Planes api={ apiKey } />) } />
             <Route path="/trains" render={ () => (<Trains api={ apiKey } />) } />
             <Route path="/automobiles" render={ () => (<Automobiles api={ apiKey } />) } />
+            <Route exact path="/:id" render={ (props) => (<Search api={ apiKey } query={ props.match.params.id } />) }></Route>
           </Switch>
         </div>
       </BrowserRouter>

@@ -1,6 +1,8 @@
 import React from 'react';
 import Picture from './Picture'
 import NoPictures from './NoPictures';
+import Search from './Search';
+import Navigation from './Navigation';
 
 const PictureList = props => { 
 
