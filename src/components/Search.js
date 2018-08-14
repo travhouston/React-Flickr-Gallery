@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-
 import Navigation from './Navigation';
 
 class Search extends Component {
