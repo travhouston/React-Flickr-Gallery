@@ -1,1 +1,3 @@
-# techdegree-project-11
+Techdegree Project 11
+
+React Flickr Gallery
