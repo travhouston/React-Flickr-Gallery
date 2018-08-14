@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-import Container from './Container';
+
 import Navigation from './Navigation';
 
 class Search extends Component {
@@ -50,9 +50,6 @@ class Search extends Component {
 
 				<Navigation />
 
-				<Container
-					query={ this.state.query }
-					api={ this.props.api } />
 			</div>
 		);
     };

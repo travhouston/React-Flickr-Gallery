@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import axios from 'axios';
 import PictureList from './PictureList';
+import Search from './Search';
 
 
 class Container extends Component {
@@ -55,6 +56,7 @@ class Container extends Component {
 
 		return (
             <div className="main-content">
+				<Search />
                 {
                 (this.state.loading)
                     ? <h2>Loading...</h2>

@@ -2,6 +2,7 @@ import React from 'react';
 import Picture from './Picture'
 import NoPictures from './NoPictures';
 
+
 const PictureList = props => { 
 
 	const results = props.photos;
@@ -21,6 +22,7 @@ const PictureList = props => {
   }
 
 	return (
+    
 		<div className="photo-container">
 
       <h2>{ props.query }</h2>

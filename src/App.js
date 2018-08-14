@@ -11,9 +11,8 @@ import apiKey from './config';
 import Trains from './components/Trains';
 import Planes from './components/Planes';
 import Automobiles from './components/Automobiles';
-import Container from './components/Container';
 import Search from './components/Search';
-
+import Container from './components/Container';
 
 
 class App extends Component {
@@ -27,7 +26,7 @@ class App extends Component {
             <Route path="/planes" render={ () => (<Planes api={ apiKey } />) } />
             <Route path="/trains" render={ () => (<Trains api={ apiKey } />) } />
             <Route path="/automobiles" render={ () => (<Automobiles api={ apiKey } />) } />
-            <Route exact path="/:id" render={ (props) => (<Search api={ apiKey } query={ props.match.params.id } />) }></Route>
+            <Route exact path="/:id" render={ (props) => (<Container api={ apiKey } query={ props.match.params.id } />) } />
           </Switch>
         </div>
       </BrowserRouter>

@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Search from './Search';
 import apiKey from '../config.js';
+import Container from './Container';
 
-const Planes = (props) => {
+const Planes = () => {
 
 	return (
 		<div className="container">
-			<Search api={ apiKey } query={ "planes" } />
+			<Container api={ apiKey } query={ "planes" } />
 		</div>
 	);
 }
