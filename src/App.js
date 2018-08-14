@@ -7,11 +7,13 @@ import React, { Component } from 'react';
 import './App.css';
 import apiKey from './config';
 
-import Search from './components/Search';
+
 import Trains from './components/Trains';
 import Planes from './components/Planes';
 import Automobiles from './components/Automobiles';
 import Container from './components/Container';
+import Search from './components/Search';
+
 
 
 class App extends Component {
